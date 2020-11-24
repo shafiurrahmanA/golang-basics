@@ -1,0 +1,21 @@
+package main 
+  
+import "fmt"
+  
+// Defining a structure 
+type Employee struct { 
+    firstName, lastName string 
+    age, salary         int
+} 
+  
+// Main Function 
+func main() { 
+  
+    // taking pointer to struct 
+    emp := &Employee{"Rahman", "khan", 25, 10000} 
+  
+    // emp.firstName is used to access 
+    // the field firstName 
+    fmt.Println("First Name: ", emp.lastName) 
+    fmt.Println("Age: ", emp.age) 
+} 
