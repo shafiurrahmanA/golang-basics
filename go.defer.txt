@@ -1,0 +1,24 @@
+package main
+
+import (
+        "fmt"
+)
+
+func A() {
+        defer fmt.Println("its green now you can go..!")
+        B()
+}
+func B() {
+        defer fmt.Println("start the vehicle")
+        C()
+}
+func C() {
+        defer fmt.Println("be ready its yellow")
+        D()
+}
+func D() {
+        defer fmt.Println("red signal stop the vehicle")
+}
+func main() {
+        A()
+}
